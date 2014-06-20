@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
   get<-function() x;
   
-  ##store the inverse matrix in Cache
+  ## store the inverse matrix in Cache
   setCache <- function(invMatrix) {
     inv <<- invMatrix;
     
@@ -41,7 +41,7 @@ cacheSolve <- function(x, ...) {
     }
     
     invMatrix <- solve(orgMatrix);
-    ##store inverse of the Matrix in Cache
+    ## store inverse of the Matrix in Cache
     x$setCache(invMatrix);
     ## Return a matrix that is the inverse of 'x'
     invMatrix;
